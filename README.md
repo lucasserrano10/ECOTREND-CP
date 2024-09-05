@@ -1,5 +1,13 @@
 # EcoTrend
 
+### Alunos Colaboradores
+- Lucas Serrano, RM - 555170
+- Lucas Serrano, RM - 555170
+- Lucas Serrano, RM - 555170
+- Lucas Serrano, RM - 555170
+- Lucas Serrano, RM - 555170
+
+
 EcoTrend é uma plataforma de e-commerce dedicada a oferecer produtos sustentáveis e veganos. Nosso objetivo é fornecer uma experiência de compra que respeite o meio ambiente e promova escolhas conscientes.
 
 ## Sumário
