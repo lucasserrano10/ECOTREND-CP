@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    color: white;
+    background-color: #b7b7a4 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #024959; 
+    color: white;
+}
+.navbar-nav .nav-link,
+.navbar-brand {
+    color: white !important; 
+}
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+    color: #f8f9fa !important; 
+}
+.navbar-toggler-icon {
+    background-color: white; 
+}
+.form-control {
+    color: black; 
+    background-color: #fff; 
+}
+.btn-light {
+    color: black; 
+    background-color: #fff; 
+}
+.card-body{
+    background-color: #F2E3D5;
+}
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.section-wrapper {
+    background-color: #7d848b; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;    
+}

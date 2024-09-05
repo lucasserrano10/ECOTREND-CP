@@ -1,0 +1,105 @@
+{
+    "produtos_ecologicos": {
+      "Roupas_Acessórios_Sustentaveis": [
+        {
+          "id": 1,
+          "nome": "Camiseta Orgânica de Algodão",
+          "marca": "EcoWear",
+          "preco": 79.90,
+          "descricao": "Camiseta feita com algodão orgânico, livre de pesticidas e corantes sintéticos.",
+          "material": "Algodão orgânico",
+          "tamanho": ["P", "M", "G", "GG"],
+          "cores": ["Branco", "Preto", "Cinza"],
+          "certificacoes": ["GOTS", "OEKO-TEX"],
+          "imagem":[""]
+        },
+        {
+          "id": 2,
+          "nome": "Bolsa Reutilizável de Cortiça",
+          "marca": "EcoStyle",
+          "preco": 149.90,
+          "descricao": "Bolsa sustentável feita de cortiça reciclada, resistente e com design elegante.",
+          "material": "Cortiça reciclada",
+          "tamanhos": ["Pequena", "Média", "Grande"],
+          "cores": ["Bege", "Marrom"],
+          "certificacoes": ["Fair Trade"],
+          "imagem":[""]
+        }
+      ],
+      "Produtos_Beleza_Cuidados_Pessoais_Naturais": [
+        {
+          "id": 1,
+          "nome": "Creme Hidratante Natural",
+          "marca": "NatureGlow",
+          "preco": 39.90,
+          "descricao": "Creme hidratante com ingredientes naturais, sem parabenos ou sulfatos.",
+          "ingredientes": ["Óleo de coco", "Aloe vera", "Manteiga de karité"],
+          "volume": "100ml",
+          "certificacoes": ["Cruelty-Free", "Vegan"],
+          "imagem":[""]
+        },
+        {
+          "id": 2,
+          "nome": "Shampoo Sólido Vegano",
+          "marca": "EcoShine",
+          "preco": 29.90,
+          "descricao": "Shampoo sólido feito com ingredientes veganos e embalado em papel reciclável.",
+          "ingredientes": ["Óleo essencial de lavanda", "Argila verde"],
+          "peso": "85g",
+          "certificacoes": ["Cruelty-Free", "Vegan", "Sem Plástico"],
+          "imagem":[""]
+        }
+      ],
+      "Itens_Para_Casa_Sustentaveis": [
+        {
+          "id": 1,
+          "nome": "Luminária de Bambu",
+          "marca": "EcoLight",
+          "preco": 199.90,
+          "descricao": "Luminária feita de bambu sustentável, ideal para decoração e iluminação ambiental.",
+          "material": "Bambu",
+          "dimensoes": "30cm x 30cm x 60cm",
+          "certificacoes": ["FSC"],
+          "imagem":[""]
+        },
+        {
+          "id": 2,
+          "nome": "Toalhas de Algodão Orgânico",
+          "marca": "EcoTowel",
+          "preco": 89.90,
+          "descricao": "Toalhas macias e absorventes feitas com algodão orgânico.",
+          "material": "Algodão orgânico",
+          "tamanhos": ["Rosto", "Banho"],
+          "cores": ["Branco", "Azul"],
+          "certificacoes": ["GOTS"],
+          "imagem":[""]
+        }
+      ],
+      "Tecnologia_Verde": [
+        {
+          "id": 1,
+          "nome": "Carregador Solar Portátil",
+          "marca": "EcoCharge",
+          "preco": 249.90,
+          "descricao": "Carregador portátil movido a energia solar, ideal para viagens e atividades ao ar livre.",
+          "material": "Silício",
+          "capacidade": "20W",
+          "compatibilidade": ["Smartphones", "Tablets"],
+          "certificacoes": ["Energy Star"],
+          "imagem":[""]
+        },
+        {
+          "id": 2,
+          "nome": "Computador Recondicionado Ecológico",
+          "marca": "EcoTech",
+          "preco": 1499.90,
+          "descricao": "Computador recondicionado com componentes sustentáveis e baixo impacto ambiental.",
+          "processador": "Intel i5",
+          "memoria": "8GB RAM",
+          "armazenamento": "256GB SSD",
+          "certificacoes": ["Energy Star", "EPEAT"],
+          "imagem":[""]
+        }
+      ]
+    }
+  }

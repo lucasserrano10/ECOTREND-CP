@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Eco Trend</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
+      <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="#">Eco Trend</a>
+          <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link text-light fs-5" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light fs-5" href="#sobre">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light fs-5" href="#produtos-container">Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-light fs-5" href="#footer">Propósito</a>
+                  </li>
+              </ul>
+              <form class="d-flex ms-auto" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-light" type="submit">Buscar</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  
+
+    <div class="container my-5" id="sobre">
+      <div class="bg-dark text-white p-4 rounded-3 shadow-lg">
+        <h4 class="fw-bold">ECOTREND</h4>
+        <p>Na EcoTrend, acreditamos que cada escolha conta. Nosso propósito é transformar a maneira como você se conecta com o mundo ao seu redor, oferecendo produtos que respeitam a vida e o meio ambiente.</p>
+      </div>
+    </div>
+
+    <!-- Contêiner para notificações -->
+    <div id="notificacao-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1100;"></div>
+
+    <!-- Contêiner para os produtos -->
+
+    <!-- Filtro de Preço -->
+  <div class="container my-4">
+    <h3>Filtrar por Preço</h3>
+      <form id="filtro-preco-form">
+        <div class="mb-3">
+          <label for="preco-min" class="form-label">Preço Mínimo:</label>
+          <input type="number" id="preco-min" class="form-control" placeholder="0" step="0.01">
+        </div>
+        <div class="mb-3">
+          <label for="preco-max" class="form-label">Preço Máximo:</label>
+          <input type="number" id="preco-max" class="form-control" placeholder="1000" step="0.01">
+        </div>
+        <button type="submit" class="btn btn-primary">Aplicar Filtro</button>
+        <button type="button" id="limpar-filtro-btn" class="btn btn-secondary ms-2">Limpar Filtro</button>
+      </form>
+  </div>
+
+  <!-- Container para os produtos -->
+  <div id="produtos-container" class="container my-4">
+  <!-- As seções de produtos serão renderizadas aqui -->
+
+
+</div>
+
+<footer class="bg-dark text-light py-4 my-5 rounded-3 shadow-lg">
+  <div class="container">
+    <h3 class="fw-bold mb-3" id="footer">EcoTrend</h3>
+    <p class="mb-2">Marca 100% Vegana e Sustentável</p>
+    <p class="mb-0">Projeto sem fins lucrativos | Apenas fins acadêmicos</p>
+  </div>
+</footer>
+</body>
+</html>
