@@ -11,7 +11,7 @@
           "tamanho": ["P", "M", "G", "GG"],
           "cores": ["Branco", "Preto", "Cinza"],
           "certificacoes": ["GOTS", "OEKO-TEX"],
-          "imagem":[""]
+          "imagem": [""]
         },
         {
           "id": 2,
