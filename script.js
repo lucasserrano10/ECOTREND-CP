@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carrinho.push(produto);
                 await salvarCarrinhoLocalStorage(carrinho);
                 await mostrarNotificacao('Produto adicionado ao carrinho!');
+                atualizarVisualizacaoCarrinho();
             } else {
                 await mostrarNotificacao('Produto já está no carrinho', 'warning');
             }
@@ -78,10 +79,46 @@ document.addEventListener('DOMContentLoaded', () => {
             carrinho = carrinho.filter(produto => produto.id !== produtoId);
             await salvarCarrinhoLocalStorage(carrinho);
             await mostrarNotificacao('Produto removido do carrinho!', 'warning');
+            atualizarVisualizacaoCarrinho();
         } catch (error) {
             await mostrarNotificacao('Erro ao remover o produto do carrinho', 'danger');
         }
     }
+
+    async function atualizarVisualizacaoCarrinho() {
+        const carrinho = await carregarCarrinhoLocalStorage();
+        const itensCarrinho = document.getElementById('itens-carrinho');
+        const totalCarrinho = document.getElementById('total-carrinho');
+        const carrinhoContainer = document.getElementById('carrinho-container');
+    
+        if (!carrinhoContainer) {
+            console.error('Elemento carrinho-container não encontrado.');
+            return;
+        }
+    
+        // Verificar se o carrinho tem itens
+        if (carrinho.length === 0) {
+            carrinhoContainer.style.display = 'none'; // Esconder se estiver vazio
+        } else {
+            carrinhoContainer.style.display = 'block'; // Mostrar se houver itens
+        }
+    
+        itensCarrinho.innerHTML = '';
+        let total = 0;
+    
+        // Adicionar os itens do carrinho à visualização
+        carrinho.forEach(item => {
+            total += item.preco;
+            const itemCarrinho = document.createElement('li');
+            itemCarrinho.textContent = `${item.nome} - R$${item.preco.toFixed(2)}`;
+            itensCarrinho.appendChild(itemCarrinho);
+        });
+    
+        totalCarrinho.textContent = `R$${total.toFixed(2)}`;
+    }
+    
+    
+    
 
     function aplicarFiltro(produtos) {
         const precoMin = parseFloat(document.getElementById('preco-min').value) || 0;
@@ -157,23 +194,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     fetchProdutos();
+    atualizarVisualizacaoCarrinho(); // Atualiza a visualização do carrinho ao carregar a página
 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('a[href^="#"]');
 
     links.forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault();
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            targetElement.scrollIntoView({
-            behavior: 'smooth'
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
-        }
-     });
-  });
+    });
 });
