@@ -4,6 +4,7 @@
 - Lucas Serrano, RM - 555170
 - Pedro Nobre, RM - 557454
 - Caio Rossini, RM - 555084
+- Enzo Almeida, RM - 556900
 - Thomaz, RM - 557789
 - Guilherme Moreira, RM - 557290
 
